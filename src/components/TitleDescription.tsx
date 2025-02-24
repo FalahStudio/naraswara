@@ -4,6 +4,8 @@ interface Props {
     gap: "none" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
     justify: "start" | "center" | "end" | "between";
     direction: "column" | "row";
+    size: "normal" | "lg";
+    weight: "regular" | "medium" | "semibold" | "bold"
     classes?: string;
 };
 
@@ -26,6 +28,12 @@ const directionClasses: Record<Props["direction"], string> = {
     row: "flex-row",
 };
 
+const sizeClasses = (size: Props["size"], weight: Props["weight"]) => ({
+    normal: `text-display-sm-${weight} md:text-display-md-${weight} lg:text-display-lg-${weight}`,
+    lg: `text-display-md-${weight} md:text-display-lg-${weight} lg:text-display-xl-${weight}`,
+});
+
+
 const gapClasses: Record<Props["gap"], string> = {
     none: "gap-0",
     xs: "gap-2",
@@ -43,13 +51,15 @@ export default function TitleDescription(props: Partial<Props> & { title: string
         gap = "sm",
         justify = "start",
         direction = "column",
-        classes = ""
+        classes = "",
+        size = "normal",
+        weight = "semibold"
     } = props;
 
     const justifyClasses = direction === 'column' ? justifyColumnClasses[justify] : justifyRowClasses[justify]
     return (
         <div className={`flex ${directionClasses[direction]} ${justifyClasses} ${gapClasses[gap]} ${classes}`}>
-            <h5 className="text-display-sm-semibold md:text-display-md-semibold lg:text-display-lg-semibold text-neutral-950">
+            <h5 className={`${sizeClasses(size, weight)[size]} text-neutral-950`}>
                 {title}
             </h5>
             <p className="text-body-sm-medium md:text-body-md-medium lg:text-body-lg-medium text-neutral-700">

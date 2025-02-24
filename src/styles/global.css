@@ -4,10 +4,18 @@
 
 @layer base {
   @font-face {
-    font-family: "Urbanist";
+    font-family: "Manrope";
     font-style: normal;
     font-weight: normal;
     font-display: swap;
-    src: url(assets/fonts/urbanist/urbanist.ttf) format("truetype");
+    src: url(assets/fonts/manrope/manrope.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(assets/fonts/lora/lora.ttf) format("truetype");
   }
 }

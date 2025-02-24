@@ -1,9 +1,13 @@
 import App from "../pages/App";
+import Header from "./header/Header";
 
 export default function MainLayout() {
     return (
         <>
-            <App />
+            <Header />
+            <main>
+                <App />
+            </main>
         </>
     )
 }

@@ -7,6 +7,37 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    "text-display-sm-regular",
+    "text-display-sm-medium",
+    "text-display-sm-semibold",
+    "text-display-sm-bold",
+
+    "text-display-md-regular",
+    "text-display-md-medium",
+    "text-display-md-semibold",
+    "text-display-md-bold",
+
+    "md:text-display-md-regular",
+    "md:text-display-md-medium",
+    "md:text-display-md-semibold",
+    "md:text-display-md-bold",
+
+    "md:text-display-lg-regular",
+    "md:text-display-lg-medium",
+    "md:text-display-lg-semibold",
+    "md:text-display-lg-bold",
+
+    "lg:text-display-lg-regular",
+    "lg:text-display-lg-medium",
+    "lg:text-display-lg-semibold",
+    "lg:text-display-lg-bold",
+    
+    "lg:text-display-xl-regular",
+    "lg:text-display-xl-medium",
+    "lg:text-display-xl-semibold",
+    "lg:text-display-xl-bold",
+  ],
   theme: {
     extend: {
       colors: {
@@ -95,7 +126,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Urbanist", "sans-serif"],
+        sans: ["Manrope", "serif"],
+        lora: ["Lora", "serif"],
       },
       fontSize: {
         "display-2xl-bold": [
