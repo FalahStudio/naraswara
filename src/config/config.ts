@@ -25,31 +25,31 @@ const config = {
         },
         {
             title: 'Intercom',
-            image: "Classpass",
+            image: "Intercom",
         },
         {
             title: 'Basecamp',
-            image: "Classpass",
+            image: "Basecamp",
         },
         {
             title: 'Rippling',
-            image: "Classpass",
+            image: "Rippling",
         },
         {
             title: 'Culture Amp',
-            image: "Classpass",
+            image: "CulutureAmp",
         },
         {
             title: 'HasiCorp',
-            image: "Classpass",
+            image: "HashiCorp",
         },
         {
             title: 'Squarespace',
-            image: "Classpass",
+            image: "SquareSpace",
         },
         {
             title: 'Medium',
-            image: "Classpass",
+            image: "Medium",
         },
     ],
     storyTellings: [
@@ -70,22 +70,22 @@ const config = {
         {
             title: 'Echoes of the Forgotten',
             desc: 'A journey through abandoned villages, uncovering stories of resilience and loss',
-            image: 'https://images.unsplash.com/photo-1507421056395-518dddcab93c',
+            image: 'https://images.unsplash.com/photo-1583418656340-11658c25f457',
         },
         {
             title: 'Through the Wrinkles of Time',
             desc: 'A black-and-white visual diary of elderly artisans preserving dying traditions.',
-            image: 'https://images.unsplash.com/photo-1560873596-6aaa046837ef',
+            image: 'https://images.unsplash.com/photo-1578311724515-44f4357358dd',
         },
         {
             title: 'Shadows of the City',
             desc: 'An intimate portrayal of life in the backstreets, where untold struggles meet silent hope.',
-            image: 'https://images.unsplash.com/photo-1614959604818-d012020d119e',
+            image: 'https://images.unsplash.com/photo-1501396358880-2d8f6ace3fc7',
         },
         {
             title: 'Silent Protest',
             desc: 'A poetic visual narrative of activists fighting for justice, without uttering a single word.',
-            image: 'https://images.unsplash.com/photo-1553171643-a7f62b633fdd',
+            image: 'https://images.unsplash.com/photo-1602199000376-ee1ce1cd46ef',
         },
     ],
     images: [

@@ -16,7 +16,7 @@ export default function CardComponent({ title = '', desc = '', image = '' }: Pro
             <CardBody className="overflow-visible p-0">
                 <Image
                     alt={title}
-                    className="w-full object-cover h-[140px]"
+                    className="w-full object-cover h-[140px] grayscale"
                     radius="none"
                     shadow="none"
                     src={image}
